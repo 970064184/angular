@@ -13,7 +13,7 @@ export class ProductDetailComponent implements OnInit {
 
   product:Product;
 
-  comments:Comment;
+  comments:Comment[];
 
   constructor(private routInfo:ActivatedRoute,private productService:ProductService) { }
 
