@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Injector, OnInit} from '@angular/core';
 import {Product, ProductService} from "../shared/product.service";
 import {AnotherProductService} from "../shared/another-product.service";
 
@@ -14,7 +14,12 @@ export class Product2Component implements OnInit {
 
   product:Product;
 
-  constructor(private productService:ProductService) { }
+  private productService:ProductService;
+  constructor(private injector:Injector){
+    this.productService=injector.get(ProductService);
+  }
+
+ /* constructor(private productService:ProductService) { }*/
 
   ngOnInit() {
     this.product=this.productService.getProduct();
