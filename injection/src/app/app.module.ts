@@ -9,13 +9,17 @@ import { Product2Component } from './product2/product2.component';
 import {LoggerService} from "./shared/logger.service";
 import {logger} from "codelyzer/util/logger";
 import {AnotherProductService} from "./shared/another-product.service";
+import { BindComponent } from './bind/bind.component';
+import { MultiplePipe } from './pipe/multiple.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Product1Component,
-    Product2Component
+    Product2Component,
+    BindComponent,
+    MultiplePipe
   ],
   imports: [
     BrowserModule

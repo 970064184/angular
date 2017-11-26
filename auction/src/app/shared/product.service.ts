@@ -9,7 +9,7 @@ export class ProductService {
     new Product(3,"第3个商品",3.99,2.5,"这是第3个商品，是我在学习angular时创建的",["数码产品"]),
     new Product(4,"第4个商品",4.99,3.5,"这是第4个商品，是我在学习angular时创建的",["食品"]),
     new Product(5,"第5个商品",5.99,4.5,"这是第5个商品，是我在学习angular时创建的",["电子产品","硬件设备"]),
-    new Product(6,"第6个商品",6.99,2.5,"这是第6个商品，是我在学习angular时创建的",["衣服"]),
+    new Product(6,"第12个商品",6.99,2.5,"这是第6个商品，是我在学习angular时创建的",["衣服"]),
   ];
     private comments:Comment[]=[
       new Comment(1,1,"2017-10-22 17:56:20","张三",3,"东西不错"),

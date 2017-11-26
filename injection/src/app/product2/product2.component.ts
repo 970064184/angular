@@ -13,6 +13,9 @@ import {AnotherProductService} from "../shared/another-product.service";
 export class Product2Component implements OnInit {
 
   product:Product;
+  birthday:Date=new Date();
+  pi:number=3.1415926;
+  size:number=7;
 
   private productService:ProductService;
   constructor(private injector:Injector){
