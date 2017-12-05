@@ -1,0 +1,11 @@
+<form [formGroup]="formModel" (submit)="onSubmit()">
+  <div>用户名：<input type="text" formControlName="username"></div>
+  <div [hidden]="!formModel.hasError('required','username')">用户名是必填的</div>
+  <div [hidden]="!formModel.hasError('minlength','username')">用户名最小长度是6</div>
+  <div>手机号码：<input type="text" formControlName="mobile"></div>
+  <div formGroupName="passwordGroup">
+    <div>密码：<input type="text" formControlName="password"></div>
+    <div> 确认密码：<input type="text" formControlName="pconfirm"></div>
+  </div>
+  <div><button type="submit">注册</button></div>
+</form>
