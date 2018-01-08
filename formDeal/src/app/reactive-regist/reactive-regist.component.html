@@ -1,9 +1,16 @@
 <form [formGroup]="formModel" (submit)="onSubmit()">
   <div>用户名：<input type="text" formControlName="username"></div>
-  <div [hidden]="!formModel.hasError('required','username')">用户名是必填的</div>
-  <div [hidden]="!formModel.hasError('minlength','username')">用户名最小长度是6</div>
+  <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
+    <div [hidden]="!formModel.hasError('required','username')">用户名是必填的</div>
+    <div [hidden]="!formModel.hasError('minlength','username')">用户名最小长度是6</div>
+  </div>
   <div>手机号码：<input type="text" formControlName="mobile"></div>
-  <div [hidden]="!formModel.hasError('mobile','mobile')">请输入正确的手机号</div>
+  <div [hidden]="formModel.get('mobile').valid || formModel.get('mobile').pristine">
+    <div [hidden]="!formModel.hasError('mobile','mobile')">请输入正确的手机号</div>
+  </div>
+  <div [hidden]="!formModel.get('mobile').pending">
+    正在校验手机号合法性
+  </div>
   <div formGroupName="passwordGroup">
     <div>密码：<input type="text" formControlName="password"></div>
     <div [hidden]="!formModel.hasError('minlength',['passwordGroup','password'])">用户名最小长度是6</div>

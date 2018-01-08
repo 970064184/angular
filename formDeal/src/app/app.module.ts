@@ -7,6 +7,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveRegistComponent } from './reactive-regist/reactive-regist.component';
+import { MobileValidatorDirective } from './directive/mobile-validator.directive';
+import { EqualValidatorDirective } from './directive/equal-validator.directive';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { ReactiveRegistComponent } from './reactive-regist/reactive-regist.compo
     AppComponent,
     TemplateFormComponent,
     ReactiveFormComponent,
-    ReactiveRegistComponent
+    ReactiveRegistComponent,
+    MobileValidatorDirective,
+    EqualValidatorDirective
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule
