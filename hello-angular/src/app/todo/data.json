@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": "63c19d8f-85e7-2689-2616-823a84b83ba4",
+      "desc": "",
+      "completed": false
+    },
+    {
+      "id": "ea4ab8b5-4455-081e-e56b-a05e7c5d305f",
+      "desc": "123",
+      "completed": false
+    },
+    {
+      "id": "3323bf83-e2d7-14a5-993c-04b5f8ca108e",
+      "desc": "123",
+      "completed": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "liu",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "ml",
+      "password": "5678"
+    },
+    {
+      "id": 3
+    },
+    {
+      "username": "testUser",
+      "password": "testPassword",
+      "id": 4
+    },
+    {
+      "username": "nihao",
+      "password": "nihao",
+      "id": 5
+    }
+  ]
+}
